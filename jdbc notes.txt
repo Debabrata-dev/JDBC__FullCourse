@@ -1,0 +1,26 @@
+JDBC-Java Database Connectivity .
+1-loade and registeer the driver
+2-create connecton
+3-create statement
+4-Excute sql statement
+5-Process the result(optional)
+6-CLose the costly resource
+
+1-loading and registeer the driver->->->->-> class.forName(com.mysql.jdbc.driver)
+
+2-create a connection ->--->DriverManager.getConncetion("url","username","password");
+url-jdbc.mysql://localhost:3306/db.name
+username-->root,password-->admin
+connection con=DriverManager.getConncetion("url","username","password");
+
+create connecton java application and databses server  .
+
+3-create statement their are 3 differnet way to create a statement 1-create statement
+                                                                   2-prepare statement -->prepareStatement ps=con.prepareStatement("sqlquery");
+                                                                   3-callable statement
+
+4-Execute sql statement ---->(ResultSet)--->1-ps.excuteQuery();
+                                        --->2-ps.excuteUpdate();//insert,update,delete Query.
+
+5-Process the result--->(ResultSet)
+6-close all the connection
